@@ -17,7 +17,7 @@ functions:
     handler: src/handler.home
     events:
       - http:
-          path:
+          path:home
           method: get
           cors: true # Add CORS if needed
   owner:
