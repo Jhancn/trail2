@@ -6,6 +6,26 @@ provider:
   stage: dev
   region: us-east-1
 functions:
-  hello:
-    handler: handler.hello
+  generateRandomNumber:
+    handler: src/handler.generateRandomNumber
+    events:
+      - http:
+          path: random-number
+          method: get
+          cors: true # Add CORS if needed
+  home:
+    handler: src/handler.home
+    events:
+      - http:
+          path:
+          method: get
+          cors: true # Add CORS if needed
+  owner:
+    handler: src/handler.owner
+    events:
+      - http:
+          path: author
+          method: get
+          cors: true # Add CORS if needed
 
+    
