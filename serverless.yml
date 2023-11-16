@@ -17,14 +17,14 @@ functions:
     handler: src/handler.home
     events:
       - http:
-          path:home
+          path: home
           method: get
           cors: true # Add CORS if needed
   owner:
     handler: src/handler.owner
     events:
       - http:
-          path: author
+          path: owner
           method: get
           cors: true # Add CORS if needed
 
