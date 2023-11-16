@@ -9,7 +9,7 @@ module.exports.home = async (event) => {
     headers: {
       "Content-Type": "text/plain",
     },
-    body: "Welcome to  generateRandomNumber home page!!!!",
+    body: "Welcome to  generateRandomNumber home page",
   };
 };
 
